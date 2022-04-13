@@ -138,7 +138,7 @@ string Point::toString() const {
 * @returns ceiled distance
 */
 int Point::distanceTo(const Point& otherPoint) const {
-    float d = (float) sqrt(pow(otherPoint.x - x, 2) + pow(otherPoint.y - y, 2));
+    double d = sqrt(pow(otherPoint.x - x, 2) + pow(otherPoint.y - y, 2));
     return (int)ceil(d);
 }
 
